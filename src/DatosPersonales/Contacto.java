@@ -29,6 +29,8 @@ public class Contacto {
         this.listaCorreo = listaCorreo;
     }
 
+    //public void putCorreoContacto(String correo, Persona persona){this.listaCorreo.put(correo,persona);}
+
     public ArrayList<Integer> getListaTelefonoFijos() {
         return listaTelefonoFijos;
     }

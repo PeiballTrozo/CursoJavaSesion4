@@ -99,7 +99,7 @@ public class Persona implements OperacionesEnvio, OperacionesRecepcion {
     }
 
     @Override
-    public void enviarCorreo(String to, ArrayList<String> copia, String asunto, String cuerpo) {
+    public Mensaje enviarCorreo(String to, ArrayList<String> copia, String asunto, String cuerpo) {
         if(contacto.getListaCorreo().containsKey(to)){
             Persona destinatario=contacto.getListaCorreo().get(to);//Se busca el destinatario
             Mensaje mensaje=new Mensaje(this.correo,to,copia,new Date(),asunto,cuerpo);//Se forma el correo
@@ -112,6 +112,7 @@ public class Persona implements OperacionesEnvio, OperacionesRecepcion {
                     }
                 }
             }
+            return mensaje;
         }else{
             throw new IllegalArgumentException("No existe ese contacto");
         }
@@ -139,6 +140,9 @@ public class Persona implements OperacionesEnvio, OperacionesRecepcion {
         //System.out.println("Asunto: "+mensaje.getAsunto()+"\n Cuerpo: "+mensaje.getCuerpo());
     }
     @Override
+    /**
+     * Procesa el buzon de recibidos y lo guarda en un archivo de texto
+     */
     public void procesarBuzonRecibidosTexto() {
         try {
             BufferedWriter bf= new BufferedWriter(new FileWriter("src\\DatosPersonales\\Ficheros\\BuzonProcesado.txt",true));
@@ -156,6 +160,9 @@ public class Persona implements OperacionesEnvio, OperacionesRecepcion {
             throw new RuntimeException(e);
         }
     }
+    /**
+     * Procesa el buzon de recibidos y lo guarda en un archivo binario de texto
+     */
     @Override
     public void procesarBuzonRecibidosBinarioTexto() {
         try {
@@ -175,6 +182,9 @@ public class Persona implements OperacionesEnvio, OperacionesRecepcion {
         }
     }
 
+    /**
+     * Procesa el buzon de recibidos y lo guarda en un archivo de binario de datos
+     */
     @Override
     public void procesarBuzonRecibidosBinarioDatos() {
         try {

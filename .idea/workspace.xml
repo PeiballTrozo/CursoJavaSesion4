@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44625c89-4d91-4150-bb6c-b7eda1507194" name="Changes" comment="Interfaces correos con colecciones">
-      <change afterPath="$PROJECT_DIR$/src/DatosPersonales/Ficheros/BuzonProcesado.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DatosPersonales/Ficheros/BuzonProcesadoBinarioDatos.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DatosPersonales/Ficheros/BuzonProcesadoBinarioTexto.dat" afterDir="false" />
+    <list default="true" id="44625c89-4d91-4150-bb6c-b7eda1507194" name="Changes" comment="Correo y ficheros bien, con lectura y escritura">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DatosPersonales/Contacto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatosPersonales/Contacto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DatosPersonales/Direccion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatosPersonales/Direccion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DatosPersonales/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatosPersonales/Empleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DatosPersonales/OperacionesCorreo/OperacionesRecepcion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatosPersonales/OperacionesCorreo/OperacionesRecepcion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DatosPersonales/Ficheros/BuzonProcesado.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatosPersonales/Ficheros/BuzonProcesado.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DatosPersonales/Ficheros/BuzonProcesadoBinarioTexto.dat" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatosPersonales/Ficheros/BuzonProcesadoBinarioTexto.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DatosPersonales/OperacionesCorreo/OperacionesEnvio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatosPersonales/OperacionesCorreo/OperacionesEnvio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DatosPersonales/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatosPersonales/Persona.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DatosPersonales/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatosPersonales/Usuario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,13 +36,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Formacion/CURSO JAVA/Sesion6/Sesion 6/Proyectos/CursoVASS.sesion6&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/INTEL/MIS ARCHIVOS/TRABAJO/Curso/Sesion5/Sesion5/Sesion 6/Proyectos/CursoVASS.sesion6"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Formacion\CURSO JAVA\Sesion 5\EjercicioCorreo\src" />
@@ -87,6 +84,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Interfaces correos con colecciones" />
-    <option name="LAST_COMMIT_MESSAGE" value="Interfaces correos con colecciones" />
+    <MESSAGE value="Correo y ficheros bien, con lectura y escritura" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correo y ficheros bien, con lectura y escritura" />
   </component>
 </project>

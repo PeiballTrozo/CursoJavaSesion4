@@ -9,12 +9,14 @@ public interface OperacionesEnvio {
 
     /**
      * Enviar el correo
-     * @param to Correo del destinatario
-     * @param copia Correos de los destinatarios de las copias. null si no se hara copias
+     *
+     * @param to     Correo del destinatario
+     * @param copia  Correos de los destinatarios de las copias. null si no se hara copias
      * @param asunto Asunto del correo
      * @param cuerpo Mensaje del correo
+     * @return El mensaje construido
      */
-    void enviarCorreo(String to,  ArrayList<String> copia, String asunto, String cuerpo);
+    Mensaje enviarCorreo(String to, ArrayList<String> copia, String asunto, String cuerpo);
 
     /**
      * Guarda el correo en la bandeja de enviados.
