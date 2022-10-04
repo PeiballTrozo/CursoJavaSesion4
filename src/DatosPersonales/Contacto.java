@@ -8,6 +8,13 @@ public class Contacto {
     private ArrayList<Integer> listaTelefonoFijos;
     private ArrayList<Integer> listaTelefonoMovil;
 
+    public Contacto()
+    {
+        this.listaCorreo=new HashMap();
+        this.listaTelefonoFijos=new ArrayList();
+        this.listaTelefonoMovil=new ArrayList();
+    }
+
     public Contacto(HashMap<String,Persona> listaCorreo, ArrayList<Integer> listaTelefonoFijos, ArrayList<Integer> listaTelefonoMovil) {
         this.listaCorreo = listaCorreo;
         this.listaTelefonoFijos = listaTelefonoFijos;

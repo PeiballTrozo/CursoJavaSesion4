@@ -3,6 +3,7 @@ package DatosPersonales;
 import DatosPersonales.OperacionesCorreo.OperacionesEnvio;
 import DatosPersonales.OperacionesCorreo.OperacionesRecepcion;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Stack;
@@ -92,6 +93,11 @@ public class Persona implements OperacionesEnvio, OperacionesRecepcion {
 
     public void setCorreo(String correo) {this.correo = correo;}
 
+    public void addContactoCorreo(String correo, Persona persona)
+    {
+        this.contacto.getListaCorreo().put(correo,persona);
+    }
+
     @Override
     public void enviarCorreo(String to, ArrayList<String> copia, String asunto, String cuerpo) {
         if(contacto.getListaCorreo().containsKey(to)){
@@ -130,6 +136,62 @@ public class Persona implements OperacionesEnvio, OperacionesRecepcion {
     @Override
     public void recibirCorreo(Mensaje mensaje) {
         this.bandejaRecibidos.push(mensaje);
-        System.out.println("Asunto: "+mensaje.getAsunto()+"\n Cuerpo: "+mensaje.getCuerpo());
+        //System.out.println("Asunto: "+mensaje.getAsunto()+"\n Cuerpo: "+mensaje.getCuerpo());
     }
+    @Override
+    public void procesarBuzonRecibidosTexto() {
+        try {
+            BufferedWriter bf= new BufferedWriter(new FileWriter("src\\DatosPersonales\\Ficheros\\BuzonProcesado.txt",true));
+            for (int i=0;i<this.bandejaRecibidos.size();i++){
+                Mensaje mensaje= this.bandejaRecibidos.get(i);
+                bf.write("Correo "+(i+1)+":\n");
+                bf.write("\tFrom: "+mensaje.getMailFrom()+"\n");
+                bf.write("\tAsunto: "+mensaje.getAsunto()+"\n");
+                bf.write("\tCuerpo:\n\t\t"+ mensaje.getCuerpo()+"\n");
+                bf.write("\n");
+            }
+            bf.flush();
+            bf.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    @Override
+    public void procesarBuzonRecibidosBinarioTexto() {
+        try {
+            BufferedOutputStream buffOutStr= new BufferedOutputStream(new FileOutputStream(new File("src\\DatosPersonales\\Ficheros\\BuzonProcesadoBinarioTexto.dat")));
+            for (int i=0;i<this.bandejaRecibidos.size();i++){
+                Mensaje mensaje= this.bandejaRecibidos.get(i);
+                buffOutStr.write(new String("Correo "+(i+1)+":\n").getBytes());
+                buffOutStr.write(new String("\tFrom: "+mensaje.getMailFrom()+"\n").getBytes());
+                buffOutStr.write(new String("\tAsunto: "+mensaje.getAsunto()+"\n").getBytes());
+                buffOutStr.write(new String("\tCuerpo:\n\t\t"+ mensaje.getCuerpo()+"\n").getBytes());
+                buffOutStr.write(new String("\n").getBytes());
+            }
+            buffOutStr.flush();
+            buffOutStr.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public void procesarBuzonRecibidosBinarioDatos() {
+        try {
+            DataOutputStream datOutStr= new DataOutputStream(new FileOutputStream("src\\DatosPersonales\\Ficheros\\BuzonProcesadoBinarioDatos.dat"));
+            for (int i=0;i<this.bandejaRecibidos.size();i++){
+                Mensaje mensaje= this.bandejaRecibidos.get(i);
+                datOutStr.writeUTF(mensaje.getMailFrom());
+                datOutStr.writeUTF(mensaje.getAsunto());
+                datOutStr.writeUTF(mensaje.getCuerpo());
+
+            }
+            datOutStr.flush();
+            datOutStr.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
 }

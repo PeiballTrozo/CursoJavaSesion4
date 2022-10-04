@@ -8,6 +8,10 @@ public class Direccion {
     private String ciudad;
     private String pais;
     private int codigoPostal;
+    public Direccion()
+    {
+
+    }
 
     public Direccion(String calle, int portal, int piso, String puerta, String ciudad, String pais, int codigoPostal) {
         this.calle = calle;

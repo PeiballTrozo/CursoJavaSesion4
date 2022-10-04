@@ -1,26 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44625c89-4d91-4150-bb6c-b7eda1507194" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EjercicioCorreo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cuentas/Cuenta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cuentas/CuentaAhorro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cuentas/CuentaNomina.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cuentas/CuentaVivienda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DatosPersonales/Contacto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DatosPersonales/Direccion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DatosPersonales/Empleado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DatosPersonales/Mensaje.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DatosPersonales/OperacionesCorreo/OperacionesEnvio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DatosPersonales/OperacionesCorreo/OperacionesRecepcion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DatosPersonales/Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DatosPersonales/Usuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="44625c89-4d91-4150-bb6c-b7eda1507194" name="Changes" comment="Interfaces correos con colecciones">
+      <change afterPath="$PROJECT_DIR$/src/DatosPersonales/Ficheros/BuzonProcesado.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DatosPersonales/Ficheros/BuzonProcesadoBinarioDatos.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DatosPersonales/Ficheros/BuzonProcesadoBinarioTexto.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DatosPersonales/Contacto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatosPersonales/Contacto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DatosPersonales/Direccion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatosPersonales/Direccion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DatosPersonales/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatosPersonales/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DatosPersonales/OperacionesCorreo/OperacionesRecepcion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatosPersonales/OperacionesCorreo/OperacionesRecepcion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DatosPersonales/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatosPersonales/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DatosPersonales/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatosPersonales/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,16 +39,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Formacion/CURSO JAVA/Sesion 5/EjercicioCorreo/src"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Formacion/CURSO JAVA/Sesion6/Sesion 6/Proyectos/CursoVASS.sesion6&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Formacion\CURSO JAVA\Sesion 5\EjercicioCorreo\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Formacion\CURSO JAVA\Sesion 5\EjercicioCorreo\src\DatosPersonales\Ficheros" />
+      <recent name="C:\Users\Formacion\CURSO JAVA\Sesion 5\EjercicioCorreo\src\DatosPersonales" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -68,6 +64,14 @@
       <option name="presentableId" value="Default" />
       <updated>1664795046771</updated>
     </task>
+    <task id="LOCAL-00001" summary="Interfaces correos con colecciones">
+      <created>1664799889856</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664799889856</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -80,5 +84,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Interfaces correos con colecciones" />
+    <option name="LAST_COMMIT_MESSAGE" value="Interfaces correos con colecciones" />
   </component>
 </project>

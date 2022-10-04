@@ -1,6 +1,6 @@
 package DatosPersonales;
 
-import Abstract.Cuentas.Cuenta;
+import Cuentas.Cuenta;
 
 import java.util.ArrayList;
 
@@ -12,7 +12,7 @@ public class Usuario extends Persona{
     private ArrayList<Cuenta> listaCuentas;
 
     public Usuario(String DNI, String nombre, String apellido1, String apellido2, Direccion direccion, Contacto contacto, String mail) {
-        super(DNI, nombre, apellido1, apellido2, direccion, contacto);
+        super(DNI, nombre, apellido1, apellido2, direccion, contacto,mail);
         listaCuentas= new ArrayList<Cuenta>();
         this.saldoTotal = calcularSaldo();
         this.mail = mail;
